@@ -600,10 +600,10 @@ body.modal-open {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .header-menu-inner .main-menu ul > li {
-      padding: 20px 0;
+      padding: 15px 0;
       position: relative; }
       .header-menu-inner .main-menu ul > li > a {
-        font-size: 11px;
+        font-size: 12px;
         color: #292825;
         padding: 5px 25px;
         border: 2px solid transparent;
