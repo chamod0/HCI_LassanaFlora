@@ -1,2 +1,2 @@
-redesign Lassana Flora 
+Redesign Lassana Flora 
 
