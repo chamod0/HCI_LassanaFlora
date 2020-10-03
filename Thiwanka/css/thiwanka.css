@@ -1,0 +1,57 @@
+.card{
+    padding: 20px;
+    width: 300px;
+    margin: 0px 0px;
+    border: 2px solid #7fad39 !important;
+   
+}
+
+.btn{
+    border-radius: 20px !important;
+    width: 160px !important;
+    border-color: #7fad39;
+}
+
+.btn-primary {
+    color: rgb(111, 111, 111); !important;
+    background-color: #ffffff !important;
+    
+
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff !important;
+    background-color: #7fad39 !important;
+    
+}
+
+.section-title h5:after {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    right: 0;
+    height: 4px;
+    width: 80px;
+    background: #7fad39;
+    content: "";
+    margin: 0 auto;
+}
+
+.section-titles {
+    
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-titles h5:after {
+    position: absolute;
+    left: 900;
+    bottom: -15px;
+    right: 0;
+    height: 4px;
+    width: 80px;
+    background: #7fad39;
+    content: "";
+    margin: 0 auto;
+}
+
