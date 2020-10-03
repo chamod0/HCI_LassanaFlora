@@ -689,6 +689,10 @@ body.modal-open {
       .header-menu-inner .main-menu ul > li.static {
         position: static; }
 
+        .icon-cog {
+          color: #7fad39;
+        }
+
 /*------- header main menu area end ------*/
 /*------- header mini cart start --------*/
 .header-cart-option {
