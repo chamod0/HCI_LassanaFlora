@@ -13,6 +13,7 @@
     <!-- Site title -->
     <title>Send Gifts to Sri Lanka | Send Flowers, Cakes &amp; Gifts Online | Lassana.com</title>
     <!-- Favicon -->
+     <link rel="stylesheet" href="assets/cart/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -24,12 +25,56 @@
     <!-- Plugins CSS -->
     <link href="assets/css/plugins.css" rel="stylesheet">
     <!-- Main Style CSS -->
+   
     <link href="assets/css/style.css" rel="stylesheet">
-
-
+    
+    <style>
+        #snackbar {
+          visibility: hidden;
+          min-width: 250px;
+          margin-left: -125px;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          border-radius: 2px;
+          padding: 16px;
+          position: fixed;
+          z-index: 1;
+          left: 50%;
+          bottom: 30px;
+          font-size: 17px;
+        }
+        
+        #snackbar.show {
+          visibility: visible;
+          -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+          animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+        
+        @-webkit-keyframes fadein {
+          from {bottom: 0; opacity: 0;} 
+          to {bottom: 30px; opacity: 1;}
+        }
+        
+        @keyframes fadein {
+          from {bottom: 0; opacity: 0;}
+          to {bottom: 30px; opacity: 1;}
+        }
+        
+        @-webkit-keyframes fadeout {
+          from {bottom: 30px; opacity: 1;} 
+          to {bottom: 0; opacity: 0;}
+        }
+        
+        @keyframes fadeout {
+          from {bottom: 30px; opacity: 1;}
+          to {bottom: 0; opacity: 0;}
+        }
+        </style>
  
 
-    
+ 
+ <script>document.getElementsByTagName("html")[0].className += " js";</script>
 
 </head>
 
@@ -188,13 +233,7 @@
                     </div> <!-- end main menu area -->
                     <div class="col-lg-2 col-6">
                         <div class="header-cart-option">
-                            <div class="cart-toggler">
-                            <div class="cart-toggler-icon">
-                                        <button><i class="icon-handbag"></i>
-                                            <span class="add-qunatity">2</span>
-                                        </button>
-                            </div>
-                        </div>
+                           
                             <div class="cart-toggler">
                                 <div class="cart-toggler-icon">
                                     <button><i class="icon-heart"></i>
@@ -337,6 +376,7 @@
                     </div>
                 </div>
             </div> <!-- section title end -->
+            
             <div class="row">
                 <div class="col-lg-12">
                     <div class="trend-main-wrapper">
@@ -344,15 +384,7 @@
                             <div class="product-tab mb-36">
                                 <ul class="nav d-flex justify-content-center">
                                     <li>
-                                        <a class="active" data-toggle="tab" href="#tab_one">
-                                            <div class="tab-icon">
-                                                <img src="assets/img/icons/icons1.png" alt="">
-                                            </div>
-                                            all products
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#tab_two">
+                                        <a lass="active" data-toggle="tab" href="#tab_two">
                                             <div class="tab-icon">
                                                 <img src="assets/img/icons/icons4.png" alt="">
                                             </div>
@@ -370,6 +402,14 @@
                                     <li>
                                         <a data-toggle="tab" href="#tab_four">
                                             <div class="tab-icon">
+                                                <img src="assets/img/icons/icons5.png" alt="">
+                                            </div>
+                                            Groceries
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tab_five">
+                                            <div class="tab-icon">
                                                 <img src="assets/img/icons/icons2.png" alt="">
                                             </div>
                                             Flowers
@@ -378,252 +418,33 @@
                                      <li>
                                         <a data-toggle="tab" href="#tab_four">
                                             <div class="tab-icon">
-                                                <img src="assets/img/icons/icons5.png" alt="">
+                                                <img src="assets/img/icons/icons8.png" alt="">
                                             </div>
-                                            Groceries
+                                            Stationery
                                         </a>
                                     </li>
                                      <li>
                                         <a data-toggle="tab" href="#tab_four">
                                             <div class="tab-icon">
-                                                <img src="assets/img/icons/icons4.png" alt="">
+                                                <img src="assets/img/icons/icons6.png" alt="">
                                             </div>
-                                            New ArrivalsSee
+                                           Beverages
                                         </a>
                                     </li>
                                      <li>
                                         <a data-toggle="tab" href="#tab_four">
                                             <div class="tab-icon">
-                                                <img src="assets/img/icons/icons4.png" alt="">
+                                                <img src="assets/img/icons/icons6.png" alt="">
                                             </div>
-                                           BeveragesSee 
+                                           Beverages
                                         </a>
                                     </li>
                                 </ul>
                             </div> <!-- end tab list -->
                         </div>
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="tab_one">
-                                <div class="product-tab-carousel slick-arrow-style">
-                                    <div class="product-item text-center">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html"><img src="assets/img/product/cake01.webp"
-                                                    alt=""></a>
-                                            <div class="product-action-link">
-                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
-                                                
-                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
-                                                        class="icon-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="tag-cate">
-                                                <a href="product-details.html">cake</a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="product-details.html">STRAWBERRY & CREAM CAKE JAR</a>
-                                            </div>
-                                            <div class="price-box">
-                                                <span class="regular-price">LKR 770.00</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="product-hover-content">
-                                            <div class="product-ratings">
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span><i class="icon-star"></i></span>
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end single item -->
-                                    <div class="product-item text-center">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html"><img src="assets/img/product/product-img2.jpg"
-                                                    alt=""></a>
-                                            <div class="product-action-link">
-                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
-                                                
-                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
-                                                        class="icon-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="tag-cate">
-                                                <a href="product-details.html">fruit</a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="product-details.html">porro quisquam</a>
-                                            </div>
-                                            <div class="price-box">
-                                                <span class="regular-price">LKR 3,830.00</span>
-                                                <span class="old-price"><del>LKR 4,830.00</del></span>
-                                            </div>
-                                        </div>
-                                        <div class="product-hover-content">
-                                            <div class="product-ratings">
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span><i class="icon-star"></i></span>
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end single item -->
-                                    <div class="product-item text-center">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html"><img src="assets/img/product/cake02.webp"
-                                                    alt=""></a>
-                                            <div class="product-action-link">
-                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
-                                                
-                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
-                                                        class="icon-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="tag-cate">
-                                                <a href="product-details.html">cake</a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="product-details.html">BABY ROSE RIBBON CAKE</a>
-                                            </div>
-                                            <div class="price-box">
-                                                <span class="regular-price">LKR 1,640.00</span>
-                                               
-                                            </div>
-                                        </div>
-                                        <div class="product-hover-content">
-                                            <div class="product-ratings">
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span><i class="icon-star"></i></span>
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end single item -->
-                                    <div class="product-item text-center">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html"><img src="assets/img/product/product-img4.jpg"
-                                                    alt=""></a>
-                                            <div class="product-action-link">
-                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
-                                                
-                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
-                                                        class="icon-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="tag-cate">
-                                                <a href="product-details.html">cake</a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="product-details.html">RUM BALL CHOCOLATE HEART</a>
-                                            </div>
-                                            <div class="price-box">
-                                                <span class="regular-price">LKR 2,640.00</span>
-                                                <span class="old-price"><del>LKR 3,640.00</del></span>
-                                            </div>
-                                        </div>
-                                        <div class="product-hover-content">
-                                            <div class="product-ratings">
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span><i class="icon-star"></i></span>
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end single item -->
-                                    <div class="product-item text-center">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html"><img src="assets/img/product/product-img5.jpg"
-                                                    alt=""></a>
-                                            <div class="product-action-link">
-                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
-                                                
-                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
-                                                        class="icon-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="tag-cate">
-                                                <a href="product-details.html">cake</a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="product-details.html">MACARONS DRIP CAKE</a>
-                                            </div>
-                                            <div class="price-box">
-                                                <span class="regular-price">LKR 65.00</span>
-                                                <span class="old-price"><del>LKR 75.00</del></span>
-                                            </div>
-                                        </div>
-                                        <div class="product-hover-content">
-                                            <div class="product-ratings">
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span><i class="icon-star"></i></span>
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end single item -->
-                                    <div class="product-item text-center">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html"><img src="assets/img/product/product-img6.jpg"
-                                                    alt=""></a>
-                                            <div class="product-action-link">
-                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
-                                                
-                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
-                                                        class="icon-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="tag-cate">
-                                                <a href="product-details.html">fruit</a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="product-details.html">porro quisquam</a>
-                                            </div>
-                                            <div class="price-box">
-                                                <span class="regular-price">LKR 65.00</span>
-                                                <span class="old-price"><del>LKR 75.00</del></span>
-                                            </div>
-                                        </div>
-                                        <div class="product-hover-content">
-                                            <div class="product-ratings">
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span class="good"><i class="icon-star"></i></span>
-                                                <span><i class="icon-star"></i></span>
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end single item -->
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab_two">
+                           
+                            <div class="tab-pane fade show active"id="tab_two">
                                 <div class="product-tab-carousel slick-arrow-style">
                                     <div class="product-item text-center">
                                         <div class="product-thumb">
@@ -657,7 +478,8 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
+
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -693,7 +515,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -729,7 +551,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -765,7 +587,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -801,7 +623,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -837,7 +659,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -878,7 +700,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -914,7 +736,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -950,7 +772,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -986,7 +808,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1022,7 +844,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1058,7 +880,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1068,7 +890,7 @@
                                 <div class="product-tab-carousel slick-arrow-style">
                                     <div class="product-item text-center">
                                         <div class="product-thumb">
-                                            <a href="product-details.html"><img src="assets/img/product/product-img8.jpg"
+                                            <a href="product-details.html"><img src="assets/img/product/product-img13.jpg"
                                                     alt=""></a>
                                             <div class="product-action-link">
                                                 <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
@@ -1098,7 +920,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1134,7 +956,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1170,7 +992,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1206,7 +1028,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1242,7 +1064,7 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
@@ -1278,12 +1100,234 @@
                                                 <span><i class="icon-star"></i></span>
                                             </div>
                                             <div class="add-to-cart">
-                                                <a href="#"><i class="icon-handbag"></i></a>
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
                                             </div>
                                         </div>
                                     </div> <!-- end single item -->
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="tab_five">
+                                <div class="product-tab-carousel slick-arrow-style">
+                                    <div class="product-item text-center">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="assets/img/product/product-img13.jpg"
+                                                    alt=""></a>
+                                            <div class="product-action-link">
+                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
+                                                
+                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
+                                                        class="icon-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="tag-cate">
+                                                <a href="product-details.html">fruit</a>
+                                            </div>
+                                            <div class="product-name">
+                                                <a href="product-details.html">porro quisquam</a>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price">LKR 65.00</span>
+                                                <span class="old-price"><del>LKR 75.00</del></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-hover-content">
+                                            <div class="product-ratings">
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span><i class="icon-star"></i></span>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end single item -->
+                                    <div class="product-item text-center">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="assets/img/product/product-img14.jpg"
+                                                    alt=""></a>
+                                            <div class="product-action-link">
+                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
+                                                
+                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
+                                                        class="icon-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="tag-cate">
+                                                <a href="product-details.html">Flower</a>
+                                            </div>
+                                            <div class="product-name">
+                                                <a href="product-details.html">LOVELY PURPLE BASKET</a>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price">LKR 65.00</span>
+                                                <span class="old-price"><del>LKR 75.00</del></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-hover-content">
+                                            <div class="product-ratings">
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span><i class="icon-star"></i></span>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end single item -->
+                                    <div class="product-item text-center">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="assets/img/product/product-img1.jpg"
+                                                    alt=""></a>
+                                            <div class="product-action-link">
+                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
+                                                
+                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
+                                                        class="icon-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="tag-cate">
+                                                <a href="product-details.html">fruit</a>
+                                            </div>
+                                            <div class="product-name">
+                                                <a href="product-details.html">porro quisquam</a>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price">LKR 65.00</span>
+                                                <span class="old-price"><del>LKR 75.00</del></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-hover-content">
+                                            <div class="product-ratings">
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span><i class="icon-star"></i></span>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end single item -->
+                                    <div class="product-item text-center">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="assets/img/product/product-img3.jpg"
+                                                    alt=""></a>
+                                            <div class="product-action-link">
+                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
+                                                
+                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
+                                                        class="icon-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="tag-cate">
+                                                <a href="product-details.html">fruit</a>
+                                            </div>
+                                            <div class="product-name">
+                                                <a href="product-details.html">porro quisquam</a>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price">LKR 65.00</span>
+                                                <span class="old-price"><del>LKR 75.00</del></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-hover-content">
+                                            <div class="product-ratings">
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span><i class="icon-star"></i></span>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end single item -->
+                                    <div class="product-item text-center">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="assets/img/product/product-img2.jpg"
+                                                    alt=""></a>
+                                            <div class="product-action-link">
+                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
+                                                
+                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
+                                                        class="icon-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="tag-cate">
+                                                <a href="product-details.html">fruit</a>
+                                            </div>
+                                            <div class="product-name">
+                                                <a href="product-details.html">porro quisquam</a>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price">LKR 65.00</span>
+                                                <span class="old-price"><del>LKR 75.00</del></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-hover-content">
+                                            <div class="product-ratings">
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span><i class="icon-star"></i></span>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end single item -->
+                                    <div class="product-item text-center">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="assets/img/product/product-img5.jpg"
+                                                    alt=""></a>
+                                            <div class="product-action-link">
+                                                <a href="#" title="Add To Wishlist"><i class="icon-heart"></i></a>
+                                                
+                                                <a href="#" title="Quick View" data-target="#quick_view" data-toggle="modal"><i
+                                                        class="icon-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="tag-cate">
+                                                <a href="product-details.html">fruit</a>
+                                            </div>
+                                            <div class="product-name">
+                                                <a href="product-details.html">porro quisquam</a>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price">LKR 65.00</span>
+                                                <span class="old-price"><del>LKR 75.00</del></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-hover-content">
+                                            <div class="product-ratings">
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span class="good"><i class="icon-star"></i></span>
+                                                <span><i class="icon-star"></i></span>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a a href="#0"  class="js-cd-add-to-cart" data-price="6300.00"><i class="icon-handbag"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end single item -->
+                                </div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -1602,8 +1646,7 @@
         </div>
     </div>
     <!-- home banner area end -->
-    
-    <!-- footer area start -->
+
     <footer>
 
         <!-- newsletter area start -->
@@ -1827,8 +1870,52 @@
     </div>
     <!-- Scroll to Top End -->
 
+    <div id="snackbar">Item Added to cart </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("snackbar");
+          x.className = "show";
+          setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        
+        </script>
 
+<div class="cd-cart cd-cart--empty js-cd-cart">
+    <a  href="#0" class="cd-cart__trigger text-replace" >
+        Cart
+        <ul  style="font-size: 17px;" class="cd-cart__count"> <!-- cart items count -->
+            <li>0</li>
+            <li>0</li>
+        </ul> <!-- .cd-cart__count -->
+    </a>
 
+    <div class="cd-cart__content">
+        <div class="cd-cart__layout">
+            <header class="cd-cart__header">
+                <h2 style="font-size: 20px;">Cart</h2>
+                <span style="font-size: 10px;"class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+            </header>
+            
+            <div class="cd-cart__body">
+                <ul>
+                    <!-- products added to the cart will be inserted here using JavaScript -->
+                </ul>
+            </div>
+
+            <footer class="cd-cart__footer">
+                <a href="#0" class="cd-cart__checkout">
+          <em>Checkout - $<span>0</span>
+            <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+            </svg>
+          </em>
+        </a>
+            </footer>
+        </div>
+    </div> <!-- .cd-cart__content -->
+</div> <!-- cd-cart -->
+<!-- footer area start -->
+<script src="assets/cart/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/cart/js/main.js"></script> 
     <!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <!-- Jquery Min Js -->
