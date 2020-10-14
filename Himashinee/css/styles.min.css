@@ -1,0 +1,137 @@
+.login-dark{
+	height:750px;
+	background:url(https://lassana.com/lassana_flora/icons/front.jpg) 0 0/cover #475d62;
+	position:relative
+}
+.login-dark form{
+		max-width:400px;
+		width:100%;
+		background-color:#1e2833;
+		padding:40px;
+		border-radius:4px;
+		transform:translate(-50%,-50%);
+		position:absolute;
+		top:60%;
+		left:45%;
+		color:#fff;
+		box-shadow:3px 3px 4px rgba(0,0,0,.2)
+}
+
+.login-dark .illustration{
+	text-align:center;
+	padding:15px 0 20px;
+	font-size:100px;
+	color:#2980ef
+}
+
+.login-dark form .form-control{
+	background:0 0;
+	border:none;
+	border-bottom:1px solid #434a52;
+	border-radius:0;
+	box-shadow:none;
+	outline:0;
+	color:inherit
+	}
+.login-dark form .btn-primary{
+		background:#214a80;
+		border:none;
+		border-radius:4px;
+		padding:11px;
+		box-shadow:none;
+		margin-top:26px;
+		text-shadow:none;
+		outline:0
+}
+.login-dark form .btn-primary:active,.login-dark form .btn-primary:hover{background:#214a80;outline:0
+}
+.login-dark form .forgot{
+		display:block;
+		text-align:center;
+		font-size:12px;
+		color:#6f7a85;
+		opacity:.9;
+		text-decoration:none
+}
+
+.login-dark form .forgot:active,.login-dark form .forgot:hover{
+	opacity:1;
+	text-decoration:none
+}
+.login-dark form .signup{
+		display:block;
+		text-align:center;
+		font-size:12px;
+		color:#6f7a85;
+		opacity:.9;
+		text-decoration:none
+		top:50%;
+}
+
+.login-dark form .signup:active,.login-dark form .signup:hover{
+	opacity:1;
+	text-decoration:none
+}
+.login-dark form .btn-primary:active{
+	transform:translateY(1px)
+}
+
+.login{
+	text-align: center;
+	font-size: 75px;
+	font-family: Times New Roman;
+	font-weight: bold;
+}
+
+.para{
+	text-align: center;
+	font-size: 20px;
+	font-family: Times New Roman;
+}
+
+.logo{
+    margin-top: 400px;
+    margin-left: 10px;
+}
+
+#snackbar {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+	font-size: 17px;
+  }
+  
+  #snackbar.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;} 
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;} 
+	to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }
