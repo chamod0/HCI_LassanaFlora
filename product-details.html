@@ -2,35 +2,83 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from demo.hasthemes.com/ogani-preview/ogani/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Sep 2020 20:45:02 GMT -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="meta description">
-
-    <!-- Site title -->
-    <title>Send Gifts to Sri Lanka | Send Flowers, Cakes &amp; Gifts Online | Lassana.com</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font-Awesome CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/simple-line-icons.css" rel="stylesheet">
-    <!-- helper class css -->
-    <link href="assets/css/helper.min.css" rel="stylesheet">
-    <!-- Plugins CSS -->
-    <link href="assets/css/plugins.css" rel="stylesheet">
-    <!-- Main Style CSS -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="meta description">
+       <link rel="stylesheet" href="Thiwanka/css/style.css" type="text/css">
+        <link rel="stylesheet" href="Thiwanka/css/thiwanka.css">
+        <!-- Site title -->
+        <title>Send Gifts to Sri Lanka | Send Flowers, Cakes &amp; Gifts Online | Lassana.com</title>
+        <!-- Favicon -->
+         <link rel="stylesheet" href="assets/cart/css/style.css">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font-Awesome CSS -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/simple-line-icons.css" rel="stylesheet">
+        <!-- helper class css -->
+        <link href="assets/css/helper.min.css" rel="stylesheet">
+        <!-- Plugins CSS -->
+        <link href="assets/css/plugins.css" rel="stylesheet">
+        <!-- Main Style CSS -->
+       
+        <link href="assets/css/style.css" rel="stylesheet">
+        
+        <style>
+            #snackbar {
+              visibility: hidden;
+              min-width: 250px;
+              margin-left: -125px;
+              background-color: #333;
+              color: #fff;
+              text-align: center;
+              border-radius: 2px;
+              padding: 16px;
+              position: fixed;
+              z-index: 1;
+              left: 50%;
+              bottom: 30px;
+              font-size: 17px;
+            }
+            
+            #snackbar.show {
+              visibility: visible;
+              -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+              animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            }
+            
+            @-webkit-keyframes fadein {
+              from {bottom: 0; opacity: 0;} 
+              to {bottom: 30px; opacity: 1;}
+            }
+            
+            @keyframes fadein {
+              from {bottom: 0; opacity: 0;}
+              to {bottom: 30px; opacity: 1;}
+            }
+            
+            @-webkit-keyframes fadeout {
+              from {bottom: 30px; opacity: 1;} 
+              to {bottom: 0; opacity: 0;}
+            }
+            
+            @keyframes fadeout {
+              from {bottom: 30px; opacity: 1;}
+              to {bottom: 0; opacity: 0;}
+            }
+            </style>
+     
     
-    <link rel="stylesheet" href="Thiwanka/css/style.css" type="text/css">
-    <link rel="stylesheet" href="Thiwanka/css/thiwanka.css">
-</head>
-
-<body>
-
+     
+     <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    
+    </head>
+    
+    <body>
+    
   <!-- Header Section Begin -->
   <header>
 
@@ -82,7 +130,8 @@
                                         <a>Categories</a> 
                                         <span><i class="fa fa-bars"></i> </span>
                                     </div>
-                                  
+                                    <input type="text" placeholder="Search over Thousand of Products">
+                                    <button type="submit" class="site-btn">SEARCH</button>
                                 </form>
                             </div>
                            
@@ -91,7 +140,7 @@
                     </div> <!-- end logo area -->
                    <div class="mb-0" style="margin-left: 250px;" >
                     <div class="hero__search__phone__text">
-                        <span><center>Our Number Hotline</center> </span>
+                        <span><center>  Hotline Number</center> </span>
                         <h5> <center>011 2200 122</center> </h5>
                         
                     </div>
@@ -129,52 +178,67 @@
                                                    
                                                 </ul>
                                             </li>
-                                            <li><a href="#">shop list layout <i class="fa fa-angle-right"></i></a>
+                                            <li><a href="#">Flowers <i class="fa fa-angle-right"></i></a>
                                                 <ul class="dropdown">
                                                     <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
                                                     <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
                                                     <li><a href="shop-list-full.html">shop list full width</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">products details <i class="fa fa-angle-right"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="product-details.html">product details</a></li>
-                                                    <li><a href="product-details-affiliate.html">product details
-                                                            affiliate</a></li>
-                                                    <li><a href="product-details-variable.html">product details
-                                                            variable</a></li>
-                                                    <li><a href="product-details-group.html">product details group</a></li>
-                                                    <li><a href="product-details-gallery-left.html">product details
-                                                            gallery left</a></li>
-                                                    <li><a href="product-details-gallery-right.html">product details
-                                                            gallery right</a></li>
-                                                    <li><a href="product-details-sticky-left.html">product details
-                                                            sticky left</a></li>
-                                                    <li><a href="product-details-sticky-right.html">product details
-                                                            sticky right</a></li>
-                                                    <li><a href="product-details-box.html">product details box slider</a></li>
-                                                    <li><a href="product-details-vertical.html">product details
-                                                            vertical</a></li>
-                                                </ul>
+                                            <li><a href="#">Fruit Bsasker & Hampers <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Fruit Bsasker & Hampers <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Chocolate <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Greetings Cards <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Gift <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Toys <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Perfukes <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Gift Vouchers <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Faction <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Stationery <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Plants <i class="fa fa-angle-right"></i></a>
+                                               
+                                            </li>
+                                            <li><a href="#">Pirikar <i class="fa fa-angle-right"></i></a>
+                                               
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="static"><a href="#">Daily Essentials </a>
+                                    <li class="static"><a href="#"><b> Daily Essentials</b></b> </a>
                                         
                                     </li>
-                                    <li class="static"><a href="#">Teachers' Day </a>
+                                    <li class="static"><a href="#"><b>Teachers' Day</b>  </a>
                                        
                                     </li>
-                                    <li><a href="#">Super Deals </a>
+                                    <li><a href="#"><b>Deals</b>  </a>
                                         
                                     </li>
-                                    <li><a href="#">Weddings </a>
+                                    <li><a href="#"><b>Weddings</b>  </a>
                                         
                                     </li>
-                                    <li><a href="contact-us.html">Academy</a>
+                                    <li><a ><b>Academy</b> </a>
 
                                     </li>
-                                     <li><a href="contact-us.html">Blog</a>
+                                     <li><a ><b>Blog</b> </a>
                                      
                                      </li>
                                 </ul>
@@ -183,14 +247,7 @@
                     </div> <!-- end main menu area -->
                     <div class="col-lg-2 col-6">
                         <div class="header-cart-option">
-                            <div class="header-search">
-                                <div class="header-search-btn">
-                                    <i class="icon-magnifier"></i>
-                                </div>
-                                <div class="search-box">
-                                    <input type="text" placeholder="search product...">
-                                </div>
-                            </div>
+                           
                             <div class="cart-toggler">
                                 <div class="cart-toggler-icon">
                                     <button><i class="icon-heart"></i>
@@ -211,7 +268,7 @@
                                         <a href="#">Log in</a>
                                     </li>
                                     <li class="checkout-btn">
-                                        <a href="#">checkout</a>
+                                        <a href="#">Register</a>
                                     </li>
                                 </ul>
                             </div>
