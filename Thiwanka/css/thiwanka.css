@@ -19,6 +19,11 @@
 
 }
 
+.swal-button--danger, .check-btn {
+    background-color: #7fad39 !important;
+}
+
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #fff !important;
     background-color: #7fad39 !important;

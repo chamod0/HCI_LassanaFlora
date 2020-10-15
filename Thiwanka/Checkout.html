@@ -239,9 +239,280 @@
             </div>
         </div>
     </header>
-    <div class="col-lg-12">
-        <div class="section-title related__product__title">
-            <h5>Test Block Page</h5>
+    <div class="checkout-page-wrapper pt-68 pt-sm-50">
+        <div class="container">
+            <div style="margin-bottom: 50px;">
+                <center><h1>Order Checkout</h1></center>
+            </div>
+    
+            <div class="row">
+                <!-- Checkout Billing Details -->
+                <div class="col-lg-6">
+                    <div class="checkout-billing-details-wrap">
+                        <h2>Billing Details</h2>
+                        <div class="billing-form-wrap">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-input-item">
+                                            <label for="f_name" class="required">First Name</label>
+                                            <input type="text" id="f_name" placeholder="First Name" required />
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <div class="single-input-item">
+                                            <label for="l_name" class="required">Last Name</label>
+                                            <input type="text" id="l_name" placeholder="Last Name" required />
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <label for="email" class="required">Email Address</label>
+                                    <input type="email" id="email" placeholder="Email Address" required />
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <label for="street-address" class="required">Street address</label>
+                                    <input type="text" id="street-address" placeholder="Street address Line 1" required />
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <input type="text"  placeholder="Street address Line 2 (Optional)" />
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <label for="town" class="required">Town / City</label>
+                                    <input type="text" id="town"  placeholder="Town / City" required />
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <label for="state">State / Divition</label>
+                                    <input type="text" id="state"  placeholder="State / Divition" />
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <label for="postcode" class="required">Postcode / ZIP</label>
+                                    <input type="text" id="postcode"  placeholder="Postcode / ZIP" required />
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" id="phone"  placeholder="Phone" />
+                                </div>
+    
+                                <div class="checkout-box-wrap">
+                                   
+                                    <div class="account-create single-form-row">
+                                        <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+                                        <div class="single-input-item">
+                                            <label for="pwd" class="required">Account Password</label>
+                                            <input type="password" id="pwd"  placeholder="Account Password" required />
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="checkout-box-wrap">
+                                    <div class="single-input-item">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="ship_to_different">
+                                            <label class="custom-control-label" for="ship_to_different">Ship to a different address?</label>
+                                        </div>
+                                    </div>
+                                    <div class="ship-to-different single-form-row">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="single-input-item">
+                                                    <label for="f_name_2" class="required">First Name</label>
+                                                    <input type="text" id="f_name_2" placeholder="First Name" required />
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-md-6">
+                                                <div class="single-input-item">
+                                                    <label for="l_name_2" class="required">Last Name</label>
+                                                    <input type="text" id="l_name_2" placeholder="Last Name" required />
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="single-input-item">
+                                            <label for="email_2" class="required">Email Address</label>
+                                            <input type="email" id="email_2" placeholder="Email Address" required />
+                                        </div>
+    
+                                        <div class="single-input-item">
+                                            <label for="street-address_2" class="required">Street address</label>
+                                            <input type="text" id="street-address_2" placeholder="Street address Line 1" required />
+                                        </div>
+    
+                                        <div class="single-input-item">
+                                            <input type="text"  placeholder="Street address Line 2 (Optional)" />
+                                        </div>
+    
+                                        <div class="single-input-item">
+                                            <label for="town_2" class="required">Town / City</label>
+                                            <input type="text" id="town_2"  placeholder="Town / City" required />
+                                        </div>
+    
+                                        <div class="single-input-item">
+                                            <label for="state_2">State / Divition</label>
+                                            <input type="text" id="state_2"  placeholder="State / Divition" />
+                                        </div>
+    
+                                        <div class="single-input-item">
+                                            <label for="postcode_2" class="required">Postcode / ZIP</label>
+                                            <input type="text" id="postcode_2"  placeholder="Postcode / ZIP" required />
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="single-input-item">
+                                    <label for="ordernote">Order Note</label>
+                                    <textarea name="ordernote" id="ordernote" cols="30" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                </div>
+                                <button type="submit" class="check-btn sqr-btn">Verify Delivery Details</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Order Summary Details -->
+                <div class="col-lg-6">
+                    <div class="order-summary-details mt-md-46 mt-sm-40">
+                        <h2>Your Order Summary</h2>
+                        <div class="order-summary-content mb-sm-4">
+                            <!-- Order Summary Table -->
+                            <div class="order-summary-table table-responsive text-center">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Products</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="single-product.html">Happy Cow Cheese Wedges 200g <strong> × 1</strong></a></td>
+                                            <td>350.00 LKR</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="single-product.html">Lemonade 1.5L <strong> × 1</strong></a></td>
+                                            <td>200.00 LKR</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="single-product.html">Sunquick Orange 800Ml <strong> × 1</strong></a></td>
+                                            <td>740.00 LKR</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Sub Total</td>
+                                            <td><strong>1290.00 LKR</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping</td>
+                                            <td class="d-flex justify-content-center">
+                                                <ul class="shipping-type">
+                                                    <li>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="flatrate" name="shipping" class="custom-control-input" checked />
+                                                            <label class="custom-control-label" for="flatrate">Express Shipping : 500.00 LKR</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="freeshipping" name="shipping" class="custom-control-input" />
+                                                            <label class="custom-control-label" for="freeshipping">Free Shipping</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Amount</td>
+                                            <td><strong>1290.00 LKR</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- Order Payment Method -->
+                            <form action="">
+                            <div class="order-payment-method">
+                                <div class="single-payment-method show">
+                                    <div class="payment-method-name">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="cashon" name="paymentmethod" value="cash" class="custom-control-input" checked  />
+                                            <label class="custom-control-label" for="cashon">Cash On Delivery</label>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method-details" data-method="cash">
+                                        <p>Pay with cash upon delivery.</p>
+                                    </div>
+                                </div>
+                                <div class="single-payment-method">
+                                    <div class="payment-method-name">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="directbank" name="paymentmethod" value="bank" class="custom-control-input" />
+                                            <label class="custom-control-label" for="directbank">Credit/Debit Card</label>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method-details" data-method="bank">
+                                        <div class="row">
+                                            <div class="single-input-item">
+                                                
+                                            </div>
+                                            <div class="single-input-item col-md-12 ">
+                                                <label for="name" class="required">Name On Card</label>
+                                                <input type="name" id="email" placeholder="Enter Your Name on Card" required />
+                                            </div>
+                                            <div class="single-input-item col-md-12 ">
+                                                <label for="number" class="required">Card Number</label>
+                                                <input type="number"  placeholder="Enter Your Card Number" required />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="single-input-item">
+                                                    <label for="f_name_2" class="required">Expire Date</label>
+                                                    <input type="date" id="f_name_2" placeholder="MM  / YYYY" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="single-input-item">
+                                                    <label for="f_name_2" class="required">CVC Number</label>
+                                                    <input type="text" id="f_name_2" placeholder="Enter Your CVC Number" required />
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-payment-method">
+                                    <div class="payment-method-name">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="paypalpayment" name="paymentmethod" value="paypal" class="custom-control-input" />
+                                            <label class="custom-control-label" for="paypalpayment">Paypal <img src="assets/img/paypal-card.jpg" class="img-fluid paypal-card" alt="Paypal" /></label>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method-details" data-method="paypal">
+                                        <p>You can pay with your funds on PayPal if you don’t have a Credit or Debit Card.</p>
+                                        <button type="submit" class="check-btn sqr-btn">Login With PayPal</button>
+                                    </div>
+                                </div>
+                                <div class="summary-footer-area">
+                                    <div class="custom-control custom-checkbox mb-30">
+                                        <input type="checkbox" class="custom-control-input" id="terms" required />
+                                        <label class="custom-control-label" for="terms">I have read and agree to the website <a
+                                            href="index.html">terms and conditions.</a></label>
+                                    </div>
+                                    <button id="checkoutBtn" type="submit" class="check-btn sqr-btn">Place Order</button>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -418,7 +689,32 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script>
+         
+        $('#checkoutBtn').click(function(){
+            swal({
+                title: "Do you wish to to place your order using this Payment method?",
+                text: "It may take few hours to confirm your order",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+                })
+                .then((willDelete) => {
+                if (willDelete) {
+                    
+                    swal("Your order has been successfully Placed", {
+                        title: "Congratulations!",
+                    icon: "success",
+                    });
+                } else {
+                    swal("Order Placement is Cancelled");
+                    
+                }
+                });
+        });
+    </script>
 
     <!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
@@ -434,6 +730,8 @@
     <script src="assets/js/ajax-mail.js"></script>
     <!-- Active Js -->
     <script src="assets/js/main.js"></script>
+
+   
 </body>
 
 
