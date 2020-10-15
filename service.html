@@ -25,6 +25,7 @@
     <link href="assets/css/plugins.css" rel="stylesheet">
     <!-- Main Style CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -232,103 +233,73 @@
 </header>
 <!-- Header Section End -->
 
-<div class="checkout-page-wrapper pt-68 pt-sm-50">
+<div class="header-menu-area sticky pt-0 pb-2 pt-md-10 pb-md-10 pt-sm-10 pb-sm-10">
+<h2><center><b>Service Payment</b></center></h2><br>
 <div class="container">
-<div class="row">
-                 <!--Checkout Billing Details -->
-                <div class="col-lg-6">
-                 <!-- <div class="checkout-billing-details-wrap"> -->
-                        <h2><center>Service Payment</center></h2><br>
-                        <div class="billing-form-wrap"> 
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-md-12"> 
-                                        <div class="single-input-item">
-                                            <label for="o_id" class="required">Order Number</label>
-                                            <input type="text" id="o_id" placeholder="Order Number" />
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-md-12">
-                                        <div class="single-input-item">
-                                            <label for="name" class="required">Name</label>
-                                            <input type="text" id="name" placeholder="Name"  />
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="single-input-item">
-                                    <label for="email" class="required">Email Address</label>
-                                    <input type="email" id="email" placeholder="Email Address"  />
-                                </div>
-    
-                                <div class="single-input-item">
-                                    <label for="phone">Phone</label>
-                                    <input type="text" id="phone"  placeholder="Phone" />
-                                </div>
-
-    
-                                <div class="single-input-item">
-                                    <label for="category" class="required">Category</label>
-                                    <select name="category nice-select" id="category">
-                                        <option value="select_op">--Select Option--</option>
-                                        <option value="delivery"> Delivery City Charges</option>
-                                    </select>
-                                </div>
-
-                                <div class="single-input-item">
-                                    <label for="comment">Comment</label>
-                                    <textarea name="comment" id="comment" cols="30" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                                </div>
-
-                               <!-- <div class="single-payment-method">
-                                    <div class="payment-method-name">
-                                        <label for="pay_method">Payment Method</label>
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="visapayment" name="paymentmethod" value="visa" class="custom-control-input" />
-                                            <label class="custom-control-label" for="visapayment">Visa Master Card <img src="assets/img/service/visa.jpg" class="img-fluid paypal-card" alt="visa" /></label>
-                                        </div>
-
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="ampayment" name="paymentmethod" value="american" class="custom-control-input" />
-                                            <label class="custom-control-label" for="ampayment">American Express <img src="assets/img/service/american.jpg" class="img-fluid paypal-card" alt="american" /></label>
-                                        </div>
-
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="sampayment" name="paymentmethod" value="sampath" class="custom-control-input" />
-                                            <label class="custom-control-label" for="ampayment">Sampath Vishwa <img src="assets/img/service/sampath.jpg" class="img-fluid paypal-card" alt="sampath" /></label><br>
-                                        </div>-->
-
-
-                                        <div class="single-input-item">
-                                            <label for="payment" class="required">Payment Method</label>
-                                            <select name="payment nice-select" id="payment">
-                                                <option value="select_op">--Select Option--</option>
-                                                <option value="visa"> Visa Master Card</option>
-                                                <option value="visa"> American Express</option>
-                                                <option value="visa"> Sampath Vishwa</option>
-                                            </select>
-                                        </div>
-
-
-
-                                        <button type="pay" id="submit" class="check-btn sqr-btn">Pay</button>
-                                        
-
-                                       <!-- <button type="verify" class="check-btn sqr-btn">Verify</button>-->
-
-                                    </div>
-                                    
-                                </div>
-                            </form>
-                        </div>
-                   <!-- </div> -->
-               </div> 
-
-            </div>
-        </div>
+    <form action="#">
+    <div class="row">
+      <div class="col-25">
+        <label for="o_id">Oreder Id</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="o_id" name="o_id" placeholder="Your Order Number..">
+      </div>
     </div>
-
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your Name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your Email Address..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Phone</label>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="phone" name="phone" placeholder="041-22-506-19" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}">
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-25">
+        <label for="comment">Comment</label>
+      </div>
+      <div class="col-75">
+        <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-25">
+        <label for="payment">Payment Method</label>
+      </div>
+      <div class="col-75">
+        <select id="payment" name="payment">
+          
+            <option value="select_op">--Select Option--</option>
+            <option value="visa"> Visa Master Card</option>
+            <option value="american"> American Express</option>
+            <option value="sampath"> Sampath Vishwa</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+        <input type="submit" id ="submit" value="Pay">
+    </div>
+    </form>
+  </div>
+  </div>
     <!-- footer area start -->
     <footer>
 
