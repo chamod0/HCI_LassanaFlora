@@ -210,34 +210,31 @@
                                         <hr>
                                         <form action="" method="post" novalidate="novalidate">
                                             <div class="form-group">
-                                                <label for="cc-payment" class="control-label mb-1" >Bride and Groom Name</label>
-                                                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" required>
-                                            <div class="valid-feedback">
-                                                Looks good!
-                                            </div>
+                                                <label for="cc-payment" class="control-label mb-1">Bride and Groom Name</label>
+                                                <input  type="text" class="form-control" aria-required="true" aria-invalid="false" value="Darshana and Rasika" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1">Wedding Location</label>
-                                                <input  type="text" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                <input  type="text" class="form-control" aria-required="true" aria-invalid="false" value="Avenra Gardens Colombo" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1">Photographer Name</label>
-                                                <input  type="text" rows="12" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                <input  type="text" rows="12" class="form-control" aria-required="true" aria-invalid="false" value="Dhanushka Senadheera Photography" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1">Image Category</label>
                                                 <select  type="text" rows="12" class="form-control" aria-required="true" aria-invalid="false" required>
-                                                    <option value="0">Please select</option>
-                                                        <option value="1">Wedding</option>
-                                                        <option value="2">Oil Lamps</option>
-                                                        <option value="3">Enterance Decoration</option>
+                                                    <option value="0">Wedding</option>
+                                                        
+                                                        <option value="1">Oil Lamps</option>
+                                                        <option value="2">Enterance Decoration</option>
                                                         <option value="3">Birthdays</option>
-                                                        <option value="3">Home Coming</option>
+                                                        <option value="4">Home Coming</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1">Event Description</label>
-                                                <textarea name="textarea-input" id="textarea-input" rows="5" placeholder="Enter Details of description of the Event" class="form-control" required></textarea>
+                                                <textarea name="textarea-input" id="textarea-input" rows="5" placeholder="Dharshana and Rasika's marriage was so charm and elegant event. All the event was full of love and the Photographer had done a great job of covering beautiful photographs." class="form-control" required ></textarea>
                                             </div>
                                             <label>Upload Image</label>
                                             <div class="input-group">
@@ -267,7 +264,7 @@
 
                                             <div>
                                                 <button id="aaa" class="btn btn-lg btn-success btn-group-sm" >
-                                                    <span id="payment-button-amount">Upload Image</span>
+                                                    <span id="payment-button-amount">Update Image</span>
                                                 </button>
                                             </div>
 
@@ -308,7 +305,7 @@
          
         $('#aaa').click(function(){
             swal({
-                title: "Do you wish to Upload this Event to Gallery Section?",
+                title: "Do you wish to Update this Event Details?",
                 
                 icon: "warning",
                 buttons: true,
@@ -316,12 +313,12 @@
                 })
                 .then((willDelete) => {
                 if (willDelete) {
-                    swal("Your Event has benn successfully Uploaded!", {
+                    swal("Your Event has been Successfully Uploaded!", {
                     icon: "success",
                     
                     });
                 } else {
-                    swal("Event upload is Discarded");
+                    swal("Event Updating is Cancelled");
                     
                 }
                 });

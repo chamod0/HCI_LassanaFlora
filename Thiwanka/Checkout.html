@@ -372,7 +372,7 @@
                                     <label for="ordernote">Order Note</label>
                                     <textarea name="ordernote" id="ordernote" cols="30" rows="3" placeholder="If you have any special notice or message about the order. Please include it here"></textarea>
                                 </div>
-                                <button type="submit" class="check-btn sqr-btn">Verify Delivery Details</button>
+                                <button type="submit" id="verifydtl" class="check-btn sqr-btn">Verify Delivery Details</button>
                             </form>
                         </div>
                     </div>
@@ -465,25 +465,25 @@
                                             </div>
                                             <div class="single-input-item col-md-12 ">
                                                 <label for="name" class="required">Name On Card</label>
-                                                <input type="name" id="email" placeholder="Enter Your Name on Card" required />
+                                                <input type="name" id="email" placeholder="Enter Your Name on Card" value="Tharindu Thiwanka" required />
                                             </div>
                                             <div class="single-input-item col-md-12 ">
                                                 <label for="number" class="required">Card Number</label>
-                                                <input type="number"  placeholder="Enter Your Card Number" required />
+                                                <input type="number"  placeholder="Enter Your Card Number"  required />
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="single-input-item">
                                                     <label for="f_name_2" class="required">Expire Date</label>
-                                                    <input type="text" id="f_name_2" placeholder="MM  / YYYY" required />
+                                                    <input type="text" id="f_name_2" placeholder="MM  / YYYY"  required />
                                                 </div>
                                             </div>  
                                             <div class="col-md-6">
                                                 <div class="single-input-item">
                                                     <label for="f_name_2" class="required">CVC Number</label>
-                                                    <input type="text" id="f_name_2" placeholder="Enter Your Card CVC Number" required />
+                                                    <input type="text" id="f_name_2" placeholder="aaa" value="111" required />
                                                 </div>
                                             </div>
-    
+                                            <input type="hidden" id="f_name_2" value="aaa" required />
                                         </div>
                                     </div>
                                 </div>
@@ -501,10 +501,11 @@
                                 </div>
                                 <div class="summary-footer-area">
                                     <div class="custom-control custom-checkbox mb-30">
-                                        <input type="checkbox" class="custom-control-input" id="terms" required />
+                                        <input type="checkbox" class="custom-control-input" id="terms"  />
                                         <label class="custom-control-label" for="terms">I have read and agree to the website <a
                                             href="index.html">terms and conditions.</a></label>
                                     </div>
+                                    <input type="hidden" class="custom-control-input" id="terms"  required/>
                                     <button id="checkoutBtn" type="submit" class="check-btn sqr-btn">Place Order</button>
                                 </div>
                             </div>
@@ -714,7 +715,20 @@
                 }
                 });
         });
+
+
+        $('#verifydtl').click(function(){
+            swal({
+            title: "Verified!",
+            text: "Your details are confirmed.",
+            icon: "success",
+            button: "Done",
+            });
+              
+        });
     </script>
+
+    
 
     <!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
