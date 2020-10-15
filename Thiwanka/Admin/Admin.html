@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+
+    <!-- Title Page-->
+    <title>Admin Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    
+    
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/lassana.PNG"  style="width: 110px !important; height: 50px; margin-left: 50px;" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chart-bar"></i>Orders</a>
+                        </li>
+                        <li class="has-sub" class="active">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-image"></i>Gallery</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li class="active">
+                                    <a href="Admin.html">Add Gallery Event</a>
+                                </li>
+                                <li>
+                                    <a href="index2.html">View Gallery Event</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li >
+                            <a href="#">
+                                <i class="far fa-check-square"></i>Stock</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar-alt"></i>Events</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-book"></i>Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap">
+                                   
+                                   
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-notifications"></i>
+                                        <span class="quantity">3</span>
+                                        <div class="notifi-dropdown js-dropdown">
+                                            <div class="notifi__title">
+                                                <p>You have 3 Notifications</p>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c1 img-cir img-40">
+                                                    <i class="zmdi zmdi-email-open"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Lassana Flora Has Recieved an Order</p>
+                                                    <span class="date">October 12, 2020 06:50 PM</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c2 img-cir img-40">
+                                                    <i class="zmdi zmdi-account-box"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>New User has Joind with the Lassana Floara</p>
+                                                    <span class="date">September 23, 2020 10:20 PM</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c3 img-cir img-40">
+                                                    <i class="zmdi zmdi-file-text"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>You got a new Email</p>
+                                                    <span class="date">August 12, 2020 5.20 AM</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__footer">
+                                                <a href="#">All notifications</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="images/icon/logoa.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">Administrator</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">Admin</a>
+                                                    </h5>
+                                                    <span class="email">Admin@lassanaflora.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-settings"></i>Setting</a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header">Add Gallery Image</div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h4 class="text-center title-2">Event Details</h4>
+                                        </div>
+                                        <hr>
+                                        <form action="" method="post" novalidate="novalidate">
+                                            <div class="form-group">
+                                                <label for="cc-payment" class="control-label mb-1">Bride and Groom Name</label>
+                                                <input  type="text" class="form-control" aria-required="true" aria-invalid="false" >
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cc-payment" class="control-label mb-1">Wedding Location</label>
+                                                <input  type="text" class="form-control" aria-required="true" aria-invalid="false" >
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cc-payment" class="control-label mb-1">Photographer Name</label>
+                                                <input  type="text" rows="12" class="form-control" aria-required="true" aria-invalid="false" >
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cc-payment" class="control-label mb-1">Image Category</label>
+                                                <select  type="text" rows="12" class="form-control" aria-required="true" aria-invalid="false" >
+                                                    <option value="0">Please select</option>
+                                                        <option value="1">Wedding</option>
+                                                        <option value="2">Oil Lamps</option>
+                                                        <option value="3">Enterance Decoration</option>
+                                                        <option value="3">Birthdays</option>
+                                                        <option value="3">Home Coming</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cc-payment" class="control-label mb-1">Event Description</label>
+                                                <textarea name="textarea-input" id="textarea-input" rows="5" placeholder="Enter Details of description of the Event" class="form-control"></textarea>
+                                            </div>
+                                            <label>Upload Image</label>
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <span class="btn btn-success btn-file">
+                                                        Browse <input type="file" id="imgInp">
+                                                    </span>
+                                                </span>
+                                                <input type="text" class="form-control" readonly>
+                                            </div>
+                                          <br><br>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Image Preview</strong>
+                                    </div>
+                                    <div class="card-body card-block">
+                                        <div class="form-group">
+                                           
+                                            <img id='img-upload'/>
+
+                                            <div>
+                                                <button id="aaa" class="btn btn-lg btn-success btn-group-sm" >
+                                                    <span id="payment-button-amount">Upload Image</span>
+                                                </button>
+                                            </div>
+
+                                        </div>   
+                                      
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="css/admin.js"></script>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+   
+    <script src="vendor/animsition/animsition.min.js"></script>
+    
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script>
+         
+        $('#aaa').click(function(){
+            swal({
+                title: "Do you wish to Upload this Event to Gallery Section?",
+                
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+                })
+                .then((willDelete) => {
+                if (willDelete) {
+                    swal("Your Event has benn successfully Uploaded!", {
+                    icon: "success",
+                    
+                    });
+                } else {
+                    swal("Event upload is Discarded");
+                    
+                }
+                });
+        });
+    </script>
+
+</body>
+
+</html>
+<!-- end document-->
