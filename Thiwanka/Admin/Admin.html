@@ -211,18 +211,16 @@
                                         <form action="" method="post" novalidate="novalidate">
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1" >Bride and Groom Name</label>
-                                                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" required>
-                                            <div class="valid-feedback">
-                                                Looks good!
-                                            </div>
+                                                <input type="text" class="form-control" id="bride" placeholder="First name" required>
+                                            
                                             </div>
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1">Wedding Location</label>
-                                                <input  type="text" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                <input  type="text" class="form-control" aria-required="true" id="location" aria-invalid="false" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1">Photographer Name</label>
-                                                <input  type="text" rows="12" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                <input  type="text" rows="12" class="form-control" aria-required="true" id="photographer" aria-invalid="false" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="cc-payment" class="control-label mb-1">Image Category</label>
@@ -326,6 +324,13 @@
                 }
                 });
         });
+    </script>
+     <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js" ></script>
+
+     <script>
+        bootstrapValidate('#bride', 'min:5:Enter Bride and Groom Name')
+        bootstrapValidate('#location', 'min:5:Enter Location')
+        bootstrapValidate('#photographer', 'min:5:Enter Valid Photographer Name')
     </script>
 
 </body>
