@@ -1,4 +1,17 @@
 $(document).ready(function () {
+
+    $(".js-range-slider").ionRangeSlider();
+
+    $("#priceRange").on("change", function () {
+        var $this = $(this),
+            value = $this.prop("value").split(";");
+            var minPrice = value[0];
+            var maxPrice = value[1];
+            console.log("Lower Price = " + minPrice + " , Upper Price = " + maxPrice);
+    });
+
+
+
     $.getJSON("data/daily-essentials.json", function (data) {
         var item = "";
         $.each(data.popular, function (key, value) {
