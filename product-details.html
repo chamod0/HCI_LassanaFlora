@@ -32,7 +32,7 @@
               visibility: hidden;
               min-width: 250px;
               margin-left: -125px;
-              background-color: #333;
+              background-color: rgb(91, 189, 66);
               color: #fff;
               text-align: center;
               border-radius: 2px;
@@ -424,11 +424,11 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="tab_description" role="tabpanel" aria-labelledby="nav_desctiption">
                                 <p><b>Ingredients:</b><br> 
-Eggs, White Sugar,Fresh Milk,Dark Chocolate,Cocoa Power,Fresh Strawberry ,Baking Powder, Baking Soda,Flour, Salted Butter,Icing Sugar etc Gift your loved ones with delicious Lassana Valentine Chocolate strawberry Cake 1Kg
+                                Eggs, White Sugar,Fresh Milk,Dark Chocolate,Cocoa Power,Fresh Strawberry ,Baking Powder, Baking Soda,Flour, Salted Butter,Icing Sugar etc Gift your loved ones with delicious Lassana Valentine Chocolate strawberry Cake 1Kg
 
-(Common allergens are in bold letters. For further information on ingredients and allergy advice, please contact 011 200 11 22) 
+                                            (Common allergens are in bold letters. For further information on ingredients and allergy advice, please contact 011 200 11 22) 
 
-*Orders need to be placed 6 hours prior to the delivery date *This cake is not recommended for out of Colombo delivery since the coating on this cake tends to melt faster.</p>
+                                *Orders need to be placed 6 hours prior to the delivery date *This cake is not recommended for out of Colombo delivery since the coating on this cake tends to melt faster.</p>
                             </div>
                             <div class="tab-pane fade" id="tab_review" role="tabpanel" aria-labelledby="nav_review">
                                 <div class="product-review">
@@ -454,19 +454,21 @@ Eggs, White Sugar,Fresh Milk,Dark Chocolate,Cocoa Power,Fresh Strawberry ,Baking
                                             </tbody>
                                         </table>
                                     </div> <!-- end of customer-review -->
-                                    <form action="#" class="review-form">
+                                    
+                                      <form name="reg" id="reg" method="POST" action="" onsubmit="return validate()">
                                         <h5>Write a review</h5>
                                         <div class="form-group row">
                                             <div class="col">
                                                 <label class="col-form-label"><span class="text-danger">*</span> Your Name</label>
                                                 <input type="text" class="form-control" required>
+                                           
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col">
                                                 <label class="col-form-label"><span class="text-danger">*</span> Your Review</label>
-                                                <textarea class="form-control" required></textarea>
-                                                <div class="help-block pt-10"><span class="text-danger">Note:</span> HTML is not translated!</div>
+                                                <textarea  class="form-control" required></textarea>
+                                                <input id="first" type="hidden">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -486,7 +488,8 @@ Eggs, White Sugar,Fresh Milk,Dark Chocolate,Cocoa Power,Fresh Strawberry ,Baking
                                             </div>
                                         </div>
                                         <div class="buttons d-flex justify-content-end">
-                                            <button class="sqr-btn" type="submit">Continue</button>
+                                            <input type="submit" class="sqr-btn">
+                                           
                                         </div>
                                     </form> <!-- end of review-form -->
                                 </div> <!-- end of product-review -->
@@ -927,7 +930,10 @@ Eggs, White Sugar,Fresh Milk,Dark Chocolate,Cocoa Power,Fresh Strawberry ,Baking
     </div>
     <!-- Scroll to Top End -->
 
-    <div id="snackbar">Item Added to cart </div>
+    <div id="snackbar">Massage send
+
+        
+    </div>
     <script>
         function myFunction() {
           var x = document.getElementById("snackbar");
@@ -971,7 +977,8 @@ Eggs, White Sugar,Fresh Milk,Dark Chocolate,Cocoa Power,Fresh Strawberry ,Baking
     </div> <!-- .cd-cart__content -->
 </div> <!-- cd-cart -->
 <!-- footer area start -->
-<script src="assets/cart/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/validate.js" ></script>
+<script src="assets/cart/js/util.js"></script> 
 <script src="assets/cart/js/main.js"></script> 
     <!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
