@@ -3,6 +3,15 @@ $(document).ready(function () {
     // initialize wishlist srray
     var wishlistArr = [];
 
+    //wishlist counter
+    if(JSON.parse(localStorage.getItem('wishlistObj')) != null){
+        var count = Object.keys(JSON.parse(localStorage.getItem('wishlistObj'))).length;
+        // console.log(count);
+        document.getElementById("wishlistCounter").innerHTML = count;
+    }else{
+        document.getElementById('wishlistCounter').innerHTML = 0;
+    }
+
     // add product item to wishlsit
     $("a#btnWishlist").on("click", function (event) {
         var item = $(this);
@@ -45,7 +54,6 @@ $(document).ready(function () {
             "</tr>";
 
         $("#wishlistTable").find('tbody').append(wishlistItem);
-
 
     });
 
