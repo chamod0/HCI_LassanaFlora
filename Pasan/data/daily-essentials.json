@@ -1,0 +1,52 @@
+{
+    "popular": [
+        {
+            "tag": "Vegetables & Fruits",
+            "name": "PASSION FRUIT(පැෂන් ෆෘට් )-250g",
+            "price":[{
+                "regular": 50.00,
+                "old": 55.00
+            }]
+        },
+        {
+            "tag": "Vegetables & Fruits",
+            "name": "KAKIRI(කැකිරි)-250g",
+            "price":[{
+                "regular": 20.00,
+                "old": 25.00
+            }]
+        },
+        {
+            "tag": "Vegetables & Fruits",
+            "name": "King Coconut",
+            "price":[{
+                "regular": 65.00,
+                "old": 80.00
+            }]
+        },
+        {
+            "tag": "Grocery",
+            "name": "HARISCHANDRA SPECIAL NOODLES-400G",
+            "price":[{
+                "regular": 140.00,
+                "old": 155.00
+            }]
+        },
+        {
+            "tag": "Grocery",
+            "name": "HAPPY COW CHEESE REGULAR 10 SLICES (200G)",
+            "price":[{
+                "regular": 100.00,
+                "old": 120.00
+            }]
+        },
+        {
+            "tag": "Grocery",
+            "name": "Kellogg's Strawberry Cornflakes-26g",
+            "price":[{
+                "regular": 100.00,
+                "old": 120.00
+            }]
+        }
+    ]
+}
