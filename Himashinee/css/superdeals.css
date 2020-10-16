@@ -5012,3 +5012,36 @@ body.modal-open {
     color: #95a83f; }
 
 
+    .header-cart-option .cart-togglers ul.cart-list {
+      width: 300px;
+      top: 130%;
+      right: 0;
+      background-color: #ffffff;
+      position: absolute;
+      padding: 20px 20px 0 20px;
+      display: none;
+      z-index: 99;
+      -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1); }
+      .header-cart-option .cart-togglers .cart-togglers-icon > button span {
+        top: -6px;
+        left: -2px;
+        position: absolute;
+        color: #ffffff;
+        font-size: 14px;
+        width: 16px;
+        height: 16px;
+        background-color: #95a83f;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 12px;
+        display: block; }
+        .header-cart-option .cart-togglers .cart-toggler-icons > button:hover {
+          color: #95a83f; }
+          .header-cart-option .cart-togglers .cart-togglers-icon > button {
+            color: #888888;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent; }
