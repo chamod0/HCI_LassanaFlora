@@ -218,19 +218,19 @@
                                                 <img src="images/1_3.jpg" class=" img-fluid img-thumbnail" alt="Lights" style="width:100%">
                                                 <p class="text-center">Darshana and Rasika's Wedding</p>
                                                 <div class="text-center" style="padding-top: 10px;">
-                                                    <button type="button" style="margin-right: 20px !important;" class="btn btn-outline-success">Edit Event</button>
-                                                    <button class="btn btn-outline-danger" id="removeimg">Remove</button>
+                                                   <a href="EditGallery.html"><button type="button" style="margin-right: 20px !important;" class="btn btn-outline-success">Edit Event<i style="margin-left: 5px;" class="fa fa-edit"></i></button></a> 
+                                                    <button class="btn btn-outline-danger" id="removeimg">Remove<i style="margin-left: 5px;" class="fa fa-remove"></i></button>
                                                   </div>
 
-                                              </div>
+                                              </div> 
                                             </div>
                                             <div class="col-sm-4">
                                               <div class="thumbnail">
                                                 <img src="images/1_2.jpg" class=" img-fluid img-thumbnail" alt="Nature" style="width:100%">
                                                 <p class="text-center">Nayomi and Prasanna's Wedding</p>
                                                 <div class="text-center" style="padding-top: 10px;">
-                                                    <button type="button" style="margin-right: 20px !important;" class="btn btn-outline-success">Edit Event</button>
-                                                    <button class="btn btn-outline-danger" id="removeimg">Remove</button>
+                                                    <a href="EditGallery.html"><button type="button" style="margin-right: 20px !important;" class="btn btn-outline-success">Edit Event<i style="margin-left: 5px;" class="fa fa-edit"></i></button></a>     
+                                                    <button class="btn btn-outline-danger" id="removeimg">Remove<i style="margin-left: 5px;" class="fa fa-remove"></i></button>
                                                   </div>
                                               </div>
                                             </div>
@@ -239,8 +239,8 @@
                                                   <img src="images/1_3.jpg" class=" img-fluid img-thumbnail" alt="Nature" style="width:100%">
                                                   <p class="text-center">Gayan and Nimani's Wedding</p>
                                                   <div class="text-center" style="padding-top: 10px;">
-                                                    <button id="removeImg"  style="margin-right: 20px !important;" class="btn btn-outline-success">Edit Event</button>
-                                                    <button class="btn btn-outline-danger" id="removeimg">Remove</button>
+                                                    <a href="EditGallery.html"><button type="button" style="margin-right: 20px !important;" class="btn btn-outline-success">Edit Event <i style="margin-left: 5px;" class="fa fa-edit"></i></button></a>     
+                                                    <button class="btn btn-outline-danger" id="removeimg">Remove<i style="margin-left: 5px;" class="fa fa-remove"></i></button>
                                                    
                                                   </div>
                                                 </div>
@@ -280,7 +280,7 @@
     <script src="js/main.js"></script>
     <script>
          
-        $('#removeimg').click(function(){
+        $('#removeimg, #removeimg').click(function(){
             swal({
                 title: "Do you wish to Upload this Event to Gallery Section?",
                 
