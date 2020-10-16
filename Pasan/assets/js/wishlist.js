@@ -32,16 +32,16 @@ $(document).ready(function () {
 
     var wishlist = JSON.parse(localStorage.getItem('wishlistObj'));
 
-    wishlist.forEach(element => {
-        // console.log(element);
-
+    wishlist.forEach((element, index) => {
+        console.log(index);
         var wishlistItem = "<tr>" +
+            "<td style='display:none;'>"+index+"</td>"+
             "<td class='pro-thumbnail'><a href='#'><img class='img-fluid' src='"+element.image+"' alt='Product' /></a></td>" +
             "<td class='pro-title'><a href='#'>"+element.name+"</a></td>" +
             "<td class='pro-price'><span>"+element.price+"</span></td>" +
             "<td class='pro-quantity'><span class='text-success'>In Stock</span></td>" +
             "<td class='pro-subtotal'><a href='cart.html' class='sqr-btn'>Add to Cart</a></td>" +
-            "<td class='pro-remove'><a href='#'><i class='fa fa-trash-o'></i></a></td>" +
+            "<td class='pro-remove'><button onClick=' deleteWishlistItem("+index+")' class='btn btn-danger'><i class='fa fa-trash-o'></i></button></td>" +
             "</tr>";
 
         $("#wishlistTable").find('tbody').append(wishlistItem);
@@ -50,9 +50,12 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
-
 });
+
+
+function deleteWishlistItem(id){
+    // alert(id);
+
+    
+}
+
