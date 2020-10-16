@@ -77,6 +77,6 @@ $("a#getProduct").on("click", function (event){
     }
     localStorage.setItem('currentProduct', JSON.stringify(itemJSON));
     console.log(JSON.parse(localStorage.getItem('currentProduct')));
-    window.location.href = "../product-details.html";
+    window.location.href = "item-details.html";
     return false;
 });
