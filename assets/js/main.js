@@ -74,7 +74,7 @@
 
 	// Hero main slider active js
 	$('.hero-slider-active').slick({
-		autoplay: false,
+		autoplay: true,
 		infinite: true,
 		fade: true,
 		dots: true,
@@ -96,7 +96,7 @@
 	var pro_slider = $('.product-tab-carousel');
 	pro_slider.slick({
 		arrows: true,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 5000,
 		pauseOnFocus: false,
 		pauseOnHover: false,

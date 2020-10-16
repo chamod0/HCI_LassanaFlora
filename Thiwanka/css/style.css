@@ -33,11 +33,12 @@
 html,
 body {
 	height: 100%;
-	font-family: "Cairo", sans-serif;
+	font-family: "Playfair Display", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-
+a,
+b,
 h1,
 h2,
 h3,
@@ -47,7 +48,7 @@ h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: "Cairo", sans-serif;
+	font-family: "Playfair Display", sans-serif;
 }
 
 h1 {
@@ -76,7 +77,7 @@ h6 {
 
 p {
 	font-size: 16px;
-	font-family: "Cairo", sans-serif;
+	font-family: "Playfair Display", sans-serif;
 	color: #6f6f6f;
 	font-weight: 400;
 	line-height: 26px;
@@ -607,6 +608,7 @@ ol {
 	font-size: 18px;
 	font-weight: 700;
 	color: #ffffff;
+	font-family: 'Playfair Display', sans-serif;
 }
 
 .hero__categories__all:after {
@@ -614,7 +616,7 @@ ol {
 	right: 18px;
 	top: 9px;
 	content: "3";
-	font-family: "ElegantIcons";
+	font-family: "Playfair Display";
 	font-size: 18px;
 	color: #ffffff;
 }
@@ -682,6 +684,7 @@ ol {
 	position: absolute;
 	right: 14px;
 	top: 14px;
+	font-family: 'Playfair Display', sans-serif;
 }
 
 .hero__search__form form input {
@@ -2624,7 +2627,7 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #F3F6FA;
+	background: #202020;
 	padding-top: 70px;
 	padding-bottom: 0;
 }
@@ -2635,7 +2638,7 @@ ol {
 
 .footer__about ul li {
 	font-size: 16px;
-	color: #1c1c1c;
+	color: #fff;
 	line-height: 36px;
 	list-style: none;
 }
@@ -2654,7 +2657,7 @@ ol {
 }
 
 .footer__widget h6 {
-	color: #1c1c1c;
+	color: #fff;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
@@ -2666,17 +2669,18 @@ ol {
 
 .footer__widget ul li {
 	list-style: none;
+	color: #fff;
 }
 
 .footer__widget ul li a {
-	color: #1c1c1c;
+	color: #fff;
 	font-size: 14px;
 	line-height: 32px;
 }
 
 .footer__widget p {
 	font-size: 14px;
-	color: #1c1c1c;
+	color: #fff;
 	margin-bottom: 30px;
 }
 
@@ -2686,7 +2690,7 @@ ol {
 }
 
 .footer__widget form input {
-	width: 100%;
+	width: 90%;
 	font-size: 16px;
 	padding-left: 20px;
 	color: #1c1c1c;
