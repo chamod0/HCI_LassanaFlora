@@ -11,7 +11,6 @@ $(document).ready(function () {
     });
 
 
-
     $.getJSON("data/daily-essentials.json", function (data) {
         var item = "";
         $.each(data.popular, function (key, value) {
@@ -53,4 +52,31 @@ $(document).ready(function () {
         });
         // document.getElementById('product-trend').innerHTML = item;
     });
+});
+
+function getProductDetails(){
+    var item = $(this);
+    console.log(item.parent().parent());
+
+    // window.location.href = "../product-details.html";
+}
+
+$("a#getProduct").on("click", function (event){
+    var item = $(this);
+    var itemImage = item.parent().parent().parent().children(".seller-thumb").children("a").children("img").attr('src')
+    var pDetails = item.parent().parent();
+    var itemTag = pDetails.children(".tag-cate").children().text();
+    var itemName = pDetails.children(".product-name").children().text();
+    var itemPrice = pDetails.children(".price-box").children("span.regular-price").text();
+
+    var itemJSON = {
+        "tag": itemTag,
+        "name": itemName,
+        "price": itemPrice,
+        "image": itemImage
+    }
+    localStorage.setItem('currentProduct', JSON.stringify(itemJSON));
+    console.log(JSON.parse(localStorage.getItem('currentProduct')));
+    window.location.href = "../product-details.html";
+    return false;
 });
