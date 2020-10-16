@@ -51,6 +51,6 @@ $(document).ready(function () {
             "</div>"+
             "</div>";
         });
-        document.getElementById('product-trend').innerHTML = item;
+        // document.getElementById('product-trend').innerHTML = item;
     });
 });

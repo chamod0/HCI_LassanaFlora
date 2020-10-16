@@ -4,7 +4,7 @@ $(document).ready(function () {
     var wishlistArr = [];
 
     // add product item to wishlsit
-    $("a").on("click", function (event) {
+    $("a#btnWishlist").on("click", function (event) {
         var item = $(this);
         var itemImage = item.parent().parent().children("a").children("img").attr('src');
         var parent = item.parent().parent().parent();
@@ -13,15 +13,6 @@ $(document).ready(function () {
         var itemPrice = parent.children(".product-content").children(".price-box").children("span#pPrice").text();
         console.log("item name= " + itemName + " , price = " + itemPrice);
 
-        var wishlistItem = "<tr>" +
-            "<td class='pro-thumbnail'><a href='#'><img class='img-fluid' src='assets/img/product/product-img7.jpg' alt='Product' /></a></td>" +
-            "<td class='pro-title'><a href='#'>element snowboard</a></td>" +
-            "<td class='pro-price'><span>$295.00</span></td>" +
-            "<td class='pro-quantity'><span class='text-success'>In Stock</span></td>" +
-            "<td class='pro-subtotal'><a href='cart.html' class='sqr-btn'>Add to Cart</a></td>" +
-            "<td class='pro-remove'><a href='#'><i class='fa fa-trash-o'></i></a></td>" +
-            "</tr>";
-
         var itemJSON = {
             "tag": itemTag,
             "name": itemName,
@@ -29,10 +20,37 @@ $(document).ready(function () {
             "image": itemImage
         }
         wishlistArr.push(itemJSON);
+        localStorage.setItem('wishlistObj', JSON.stringify(wishlistArr));
         console.log(wishlistArr);
 
         return false;
     });
+
+    //get all wishlists from json array
+
+    console.log(JSON.parse(localStorage.getItem('wishlistObj')));
+
+    var wishlist = JSON.parse(localStorage.getItem('wishlistObj'));
+
+    wishlist.forEach(element => {
+        // console.log(element);
+
+        var wishlistItem = "<tr>" +
+            "<td class='pro-thumbnail'><a href='#'><img class='img-fluid' src='"+element.image+"' alt='Product' /></a></td>" +
+            "<td class='pro-title'><a href='#'>"+element.name+"</a></td>" +
+            "<td class='pro-price'><span>"+element.price+"</span></td>" +
+            "<td class='pro-quantity'><span class='text-success'>In Stock</span></td>" +
+            "<td class='pro-subtotal'><a href='cart.html' class='sqr-btn'>Add to Cart</a></td>" +
+            "<td class='pro-remove'><a href='#'><i class='fa fa-trash-o'></i></a></td>" +
+            "</tr>";
+
+        $("#wishlistTable").find('tbody').append(wishlistItem);
+
+
+    });
+
+
+
 
 
 
