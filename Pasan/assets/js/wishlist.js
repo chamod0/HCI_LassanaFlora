@@ -32,6 +32,12 @@ $(document).ready(function () {
         localStorage.setItem('wishlistObj', JSON.stringify(wishlistArr));
         console.log(wishlistArr);
 
+        Swal.fire({
+            title: "<i>SUCCESS</i>", 
+            html: itemName+" successfully added to the <b>WISHLIST</b>",  
+            confirmButtonText: "<u>close</u>", 
+        });
+
         return false;
     });
 
@@ -50,7 +56,7 @@ $(document).ready(function () {
             "<td class='pro-price'><span>" + element.price + "</span></td>" +
             "<td class='pro-quantity'><span class='text-success'>In Stock</span></td>" +
             "<td class='pro-subtotal'><a href='cart.html' class='sqr-btn'>Add to Cart</a></td>" +
-            "<td class='pro-remove'><button onClick=' deleteWishlistItem(" + index + ")' class='btn btn-danger'><i class='fa fa-trash-o'></i></button></td>" +
+            "<td class='pro-remove'><button onClick='deleteWishlistItem("+index+")' class='btn btn-danger'><i class='fa fa-trash-o'></i></button></td>" +
             "</tr>";
 
         $("#wishlistTable").find('tbody').append(wishlistItem);
@@ -68,6 +74,12 @@ function deleteWishlistItem(id) {
     wishlist.splice(id, 1);
     localStorage.setItem('wishlistObj',JSON.stringify(wishlist)); 
     console.log(JSON.parse(localStorage.getItem('wishlistObj')));
+
+    Swal.fire({
+        title: "<i>SUCCESS</i>", 
+        html: "item successfully removed from the <b>WISHLIST</b>",  
+        confirmButtonText: "<u>close</u>", 
+    });
 
 }
 
